@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="site.technova.AppTest" time="0.045" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="D:\EHEI\Java\Spring\tp-spring-facturation\target\test-classes;D:\EHEI\Java\Spring\tp-spring-facturation\target\classes;C:\Users\Mohamed-Amine\.m2\repository\junit\junit\4.8\junit-4.8.jar;C:\Users\Mohamed-Amine\.m2\repository\org\springframework\spring-context\5.3.20\spring-context-5.3.20.jar;C:\Users\Mohamed-Amine\.m2\repository\org\springframework\spring-aop\5.3.20\spring-aop-5.3.20.jar;C:\Users\Mohamed-Amine\.m2\repository\org\springframework\spring-core\5.3.20\spring-core-5.3.20.jar;C:\Users\Mohamed-Amine\.m2\repository\org\springframework\spring-jcl\5.3.20\spring-jcl-5.3.20.jar;C:\Users\Mohamed-Amine\.m2\repository\org\springframework\spring-expression\5.3.20\spring-expression-5.3.20.jar;C:\Users\Mohamed-Amine\.m2\repository\org\springframework\spring-beans\5.3.20\spring-beans-5.3.20.jar;"/>
+    <property name="java.vm.vendor" value="Microsoft"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://www.microsoft.com"/>
+    <property name="user.timezone" value="Africa/Casablanca"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Microsoft\jdk-11.0.20.8-hotspot\bin"/>
+    <property name="sun.java.command" value="C:\Users\Mohamed-Amine\AppData\Local\Temp\surefire12663980472567568483\surefirebooter-20240323173150507_3.jar C:\Users\Mohamed-Amine\AppData\Local\Temp\surefire12663980472567568483 2024-03-23T17-31-50_006-jvmRun1 surefire-20240323173150507_1tmp surefire_0-20240323173150507_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\EHEI\Java\Spring\tp-spring-facturation\target\test-classes;D:\EHEI\Java\Spring\tp-spring-facturation\target\classes;C:\Users\Mohamed-Amine\.m2\repository\junit\junit\4.8\junit-4.8.jar;C:\Users\Mohamed-Amine\.m2\repository\org\springframework\spring-context\5.3.20\spring-context-5.3.20.jar;C:\Users\Mohamed-Amine\.m2\repository\org\springframework\spring-aop\5.3.20\spring-aop-5.3.20.jar;C:\Users\Mohamed-Amine\.m2\repository\org\springframework\spring-core\5.3.20\spring-core-5.3.20.jar;C:\Users\Mohamed-Amine\.m2\repository\org\springframework\spring-jcl\5.3.20\spring-jcl-5.3.20.jar;C:\Users\Mohamed-Amine\.m2\repository\org\springframework\spring-expression\5.3.20\spring-expression-5.3.20.jar;C:\Users\Mohamed-Amine\.m2\repository\org\springframework\spring-beans\5.3.20\spring-beans-5.3.20.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Mohamed-Amine"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-07-18"/>
+    <property name="java.home" value="C:\Program Files\Microsoft\jdk-11.0.20.8-hotspot"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\EHEI\Java\Spring\tp-spring-facturation"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\Mohamed-Amine\AppData\Local\Temp\surefire12663980472567568483\surefirebooter-20240323173150507_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.20+8-LTS"/>
+    <property name="user.name" value="Mohamed-Amine"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Microsoft-8035250"/>
+    <property name="localRepository" value="C:\Users\Mohamed-Amine\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/microsoft/openjdk/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\MOHAME~1\AppData\Local\Temp\"/>
+    <property name="java.version" value="11.0.20"/>
+    <property name="user.dir" value="D:\EHEI\Java\Spring\tp-spring-facturation"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Microsoft\jdk-11.0.20.8-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\app\Mohamed-Amine\product\21c\dbhomeXE\bin;C:\Program Files\Microsoft\jdk-11.0.20.8-hotspot\bin;C:\Users\Mohamed-Amine\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\Mohamed-Amine\AppData\Local\Programs\Python\Python311\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;D:\Matlab\runtime\win32;D:\Matlab\bin;D:\Matlab\polyspace\bin;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Users\Mohamed-Amine\AppData\Local\Android\Sdk\tools;C:\Users\Mohamed-Amine\AppData\Local\Microsoft\WindowsApps;C:\Users\Mohamed-Amine\AppData\Local\Programs\Microsoft VS Code\bin;C:\xampp\mysql\bin;C:\Users\Mohamed-Amine\AppData\Roaming\npm;C:\ffmpeg-2023-07-19-git-efa6cec759-full_build\bin;C:\Users\Mohamed-Amine\AppData\Local\Android\Sdk\platform-tools;C:\Users\Mohamed-Amine\.dotnet\tools;C:\apache-maven-3.9.5\bin;;C:\Program Files\Azure Data Studio\bin;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Microsoft"/>
+    <property name="java.vm.version" value="11.0.20+8-LTS"/>
+    <property name="java.specification.maintenance.version" value="2"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="testApp" classname="site.technova.AppTest" time="0.003"/>
+</testsuite>

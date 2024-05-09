@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="facturationService" class="site.technova.service.facturation.FacturationService">
+        <property name="reductionService" ref="parametrableReductionService"></property>
+    </bean>
+    <bean id="sansReductionService" 
+    class="site.technova.service.reduction.implementation.SansReductionService">
+    </bean>
+    <bean id="parametrableReductionService" 
+    class="site.technova.service.reduction.implementation.ParametrableReductionService">
+        <property name="taux" value="${reduction.parametrable.taux}"></property>
+    </bean>
+
+    <bean
+    class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer" 
+    >
+        <property name="location" value="classpath:app.properties"></property>
+    </bean>
+
+</beans>
