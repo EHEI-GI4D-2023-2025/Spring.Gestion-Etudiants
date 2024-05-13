@@ -61,4 +61,17 @@ public class EtudiantService {
         }
         return e;
     }
+
+    public List<Etudiant> recupererParNom(String nom) {
+        return etudiantDAO.recupererParNom(nom);
+    }
+
+    public List<Etudiant> recupererParPrenom(String prenom) {
+        return etudiantDAO.recupererParPrenom(prenom);
+    }
+
+    public List<Etudiant> recupererParNomPrenom(String nom, String prenom) {
+        return etudiantDAO.recupererParNomEtPrenom(nom, prenom);
+    }
+
 }

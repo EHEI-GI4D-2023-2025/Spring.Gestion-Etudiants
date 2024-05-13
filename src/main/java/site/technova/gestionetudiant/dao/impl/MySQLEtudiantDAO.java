@@ -1,5 +1,6 @@
 package site.technova.gestionetudiant.dao.impl;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.sql.DataSource;
@@ -52,7 +53,36 @@ public class MySQLEtudiantDAO implements EtudiantDAO {
             String sql = "SELECT * FROM etudiant WHERE id=?";
             return this.jdbcTemplate.queryForObject(sql, new EtudiantRowMapper(), id);
         } catch (EmptyResultDataAccessException e) {
-            // TODO: handle exception
+            return null;
+        }
+    }
+
+    @Override
+    public List<Etudiant> recupererParNom(String nom) {
+        try {
+            String sql = "SELECT * FROM etudiant WHERE nom=?";
+            return this.jdbcTemplate.query(sql, new EtudiantRowMapper(), nom);
+        } catch (EmptyResultDataAccessException e) {
+            return null;
+        }
+    }
+
+    @Override
+    public List<Etudiant> recupererParPrenom(String prenom) {
+        try {
+            String sql = "SELECT * FROM etudiant WHERE prenom=?";
+            return this.jdbcTemplate.query(sql, new EtudiantRowMapper(), prenom);
+        } catch (EmptyResultDataAccessException e) {
+            return null;
+        }
+    }
+
+    @Override
+    public List<Etudiant> recupererParNomEtPrenom(String nom, String prenom) {
+        try {
+            String sql = "SELECT * FROM etudiant WHERE nom=? and prenom=?";
+            return this.jdbcTemplate.query(sql, new EtudiantRowMapper(), nom, prenom);
+        } catch (EmptyResultDataAccessException e) {
             return null;
         }
     }

@@ -12,4 +12,10 @@ public interface EtudiantDAO {
     public List<Etudiant> recupererTous();
 
     public Etudiant recupererParId(String id);
+
+    public List<Etudiant> recupererParNom(String nom);
+
+    public List<Etudiant> recupererParPrenom(String prenom);
+
+    public List<Etudiant> recupererParNomEtPrenom(String nom, String prenom);
 }

@@ -1,4 +1,4 @@
-package site.technova.gestionetudiant.Controller;
+package site.technova.gestionetudiant.Controleurs;
 
 import java.util.List;
 
@@ -9,6 +9,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
@@ -18,15 +19,24 @@ import site.technova.gestionetudiant.service.EtudiantService;
 
 @RestController
 @RequestMapping("/etudiants")
-public class EtudiantController {
+public class EtudiantControleur {
 
     @Autowired
     private EtudiantService etudiantService;
 
-    // Get by nom, get by id,
-
     @GetMapping
-    public List<Etudiant> trouverTous() {
+    public List<Etudiant> trouverTous(
+            @RequestParam(required = false) String nom,
+            @RequestParam(required = false) String prenom) {
+        if (nom != null && prenom != null) {
+            return etudiantService.recupererParNomPrenom(nom, prenom);
+        }
+        if (nom != null) {
+            return etudiantService.recupererParNom(nom);
+        }
+        if (prenom != null) {
+            return etudiantService.recupererParPrenom(prenom);
+        }
         return etudiantService.recupererTous();
     }
 
@@ -40,9 +50,8 @@ public class EtudiantController {
                 throw new EtudiantIntrouvableException();
             }
         } catch (EtudiantIntrouvableException ex) {
-            throw new ResponseStatusException(HttpStatus.NOT_FOUND, null, ex);
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, null, ex);
         }
         return etudiant;
     }
-
 }

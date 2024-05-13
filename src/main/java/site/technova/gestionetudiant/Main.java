@@ -7,9 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import site.technova.gestionetudiant.model.Etudiant;
-import site.technova.gestionetudiant.service.EtudiantService;
-
 @SpringBootApplication
 public class Main {
 

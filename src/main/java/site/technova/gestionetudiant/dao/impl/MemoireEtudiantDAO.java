@@ -1,6 +1,7 @@
 package site.technova.gestionetudiant.dao.impl;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import org.springframework.stereotype.Repository;
 
@@ -50,5 +51,38 @@ public class MemoireEtudiantDAO implements EtudiantDAO {
             }
         }
         return null;
+    }
+
+    @Override
+    public ArrayList<Etudiant> recupererParNom(String nom) {
+        ArrayList<Etudiant> etudiants = new ArrayList<Etudiant>();
+        for (int i = 0; i < etudiants.size(); i++) {
+            if (etudiants.get(i).getNom() == nom) {
+                etudiants.add(etudiants.get(i));
+            }
+        }
+        return etudiants;
+    }
+
+    @Override
+    public List<Etudiant> recupererParPrenom(String prenom) {
+        ArrayList<Etudiant> etudiants = new ArrayList<Etudiant>();
+        for (int i = 0; i < etudiants.size(); i++) {
+            if (etudiants.get(i).getNom() == prenom) {
+                etudiants.add(etudiants.get(i));
+            }
+        }
+        return etudiants;
+    }
+
+    @Override
+    public List<Etudiant> recupererParNomEtPrenom(String nom, String prenom) {
+        ArrayList<Etudiant> etudiants = new ArrayList<Etudiant>();
+        for (int i = 0; i < etudiants.size(); i++) {
+            if (etudiants.get(i).getNom() == prenom && etudiants.get(i).getPrenom() == prenom) {
+                etudiants.add(etudiants.get(i));
+            }
+        }
+        return etudiants;
     }
 }
